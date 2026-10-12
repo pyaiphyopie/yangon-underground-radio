@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yangon Underground Radio</title>
+  <style>
+    :root {
+      --bg: #070707;
+      --cyan: #00AEEF;
+      --violet: #8B5CF6;
+      --white: #F5F7FA;
+      --graphite: #141414;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      border-bottom: 1px solid #222;
+    }
+    .logo {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: white;
+    }
+    .logo span {
+      display: block;
+      font-size: 0.4em;
+      color: var(--cyan);
+      letter-spacing: 0.15em;
+      margin-top: 0.2em;
+      font-weight: 600;
+    }
+    .accent {
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--violet), transparent);
+      margin: 1.5rem auto 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1.5rem;
+      background: var(--graphite);
+    }
+    nav a { color: var(--cyan); text-decoration: none; font-weight: 500; }
+    main { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
+    section { margin-bottom: 3rem; }
+    h2 { color: var(--cyan); margin-bottom: 1rem; font-size: 1.5rem; }
+    .player-box {
+      background: var(--graphite);
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .player-box p { color: #aaa; margin-bottom: 1rem; }
+    .schedule {
+      display: grid;
+      gap: 1rem;
+    }
+    .show {
+      background: var(--graphite);
+      padding: 1rem 1.5rem;
+      border-left: 3px solid var(--cyan);
+      border-radius: 4px;
+    }
+    .show strong { color: white; }
+    .show span { color: var(--violet); font-size: 0.85rem; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      border-top: 1px solid #222;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">YANGON<span>UNDERGROUND RADIO</span></div>
+    <div class="accent"></div>
+  </header>
+  <nav>
+    <a href="#listen">Listen</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#about">About</a>
+    <a href="#submit">Submit</a>
+  </nav>
+  <main>
+    <section id="listen">
+      <h2>Listen Live</h2>
+      <div class="player-box">
+        <p>Stream coming online after private testing and rights clearance.</p>
+        <p style="color:#555;font-size:0.9rem;">Embed player will appear here once AzuraCast or managed host is configured.</p>
+        <!-- Placeholder for future embed -->
+        <!-- <audio controls src="STREAM_URL_HERE"></audio> -->
+      </div>
+    </section>
+
+    <section id="schedule">
+      <h2>Weekly Schedule</h2>
+      <div class="schedule">
+        <div class="show"><strong>Monday</strong> &mdash; Underground Rotation <span>Independent Burmese releases & discoveries</span></div>
+        <div class="show"><strong>Wednesday</strong> &mdash; Behind the Noise <span>Interviews with musicians, producers & DJs</span></div>
+        <div class="show"><strong>Friday</strong> &mdash; Friday Frequency <span>Live DJ set or session</span></div>
+        <div class="show"><strong>Sunday</strong> &mdash; The Local Signal <span>New releases, submissions & scene updates</span></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Yangon Underground Radio is an independent internet radio station focused on underground hip-hop, rock, alternative, metal, electronic music, and DJ mixes from Yangon and the region. Burmese + English. Curation and scene access over library size.</p>
+      <p style="margin-top:1rem;color:#aaa;">Public launch is conditional on regulatory verification and music rights clearance. Private testing first.</p>
+    </section>
+
+    <section id="submit">
+      <h2>Artist Submissions</h2>
+      <p>Independent artists and DJs: submit tracks with documented permission for live internet radio, archive, and promotional clips. Contact via station channels once live.</p>
+    </section>
+  </main>
+  <footer>
+    Yangon Underground Radio &bull; Internet radio &bull; Yangon, Myanmar &bull; 2026
+  </footer>
+</body>
+</html>
